@@ -1,0 +1,9 @@
+.link {
+    &:hover {
+        color: $blue-500;
+    }
+}
+
+.active {
+    color: $blue-500;
+}

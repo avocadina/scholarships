@@ -1,0 +1,44 @@
+@use "app/styles/colors.scss" as *;
+$font-family: "Roboto", sans-serif;
+$second-family: "Raleway", sans-serif;
+
+.second-family {
+    font-family: $second-family;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+//
+
+.regular {
+    font-weight: 400;
+}
+
+.semibold {
+    font-weight: 600;
+}
+//
+
+.neutral-900 {
+    color: $neutral-900;
+}
+
+.neutral-600 {
+    color: $neutral-600;
+}
+
+.blue-300 {
+    color: $blue-300;
+}
+//
+
+.text-16 {
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.text-18 {
+    font-size: 18px;
+    line-height: 144%;
+}

@@ -1,0 +1,17 @@
+.container {
+    padding: $space-6 $space-8;
+    border-radius: $space-4;
+}
+
+.text {
+    font-variant-numeric: lining-nums proportional-nums;
+    cursor: default;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.nav {
+    gap: $space-10;
+    align-self: center;
+}
