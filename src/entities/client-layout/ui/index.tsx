@@ -1,4 +1,5 @@
 import React from "react";
+
 import Header from "~/src/entities/header/ui";
 import Footer from "~/src/entities/footer/ui";
 
