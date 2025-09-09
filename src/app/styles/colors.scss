@@ -7,10 +7,13 @@ $blue-700: #233664;
 $blue-500: #385BAE;
 $blue-400: #6887BA;
 $blue-300: #A2B6D9;
+$blue-200: #E6EFFF;
 $blue-100: #F6F9FF;
 
 $red-500: #EC0F60;
 $red-100: #FFF4F8;
+
+$teal-500: #1CA48B;
 
 $colors: (
     neutral-900: #1F1F1F,
@@ -22,10 +25,13 @@ $colors: (
     blue-500: #385BAE,
     blue-400: #6887BA,
     blue-300: #A2B6D9,
+    blue-200: #E6EFFF,
     blue-100: #F6F9FF,
 
     red-500: #EC0F60,
     red-100: #FFF4F8,
+
+    teal-500: #1CA48B,
 );
 
 @each $key, $value in $colors {

@@ -1,0 +1,15 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: 1px solid $blue-200;
+}
+
+.item {
+    grid-column: 1 span;
+    display: flex;
+    justify-content: center;
+    padding: $space-3-half 0;
+    &:not(:last-of-type) {
+        border-right: 1px solid $blue-200;
+    }
+}

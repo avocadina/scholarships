@@ -1,0 +1,13 @@
+.container {
+    grid-area: stat;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    min-height: 388px;
+    max-width: 660px;
+}
+
+.item {
+    grid-column: 6 span;
+    display: grid;
+    place-content: center;
+}
