@@ -5,6 +5,7 @@ $space-6px: 6px;
 $space-2: 8px;
 $space-10px: 10px;
 $space-3: 12px;
+$space-3-half: 14px;
 $space-4: 16px;
 $space-5: 20px;
 $space-6: 24px;
@@ -17,5 +18,33 @@ $space-50: 50px;
 $space-60: 60px;
 $space-80: 80px;
 $space-100: 100px;
+
+$spaces: (
+    0: $space-0,
+    1: $space-1,
+    2: $space-2,
+    3: $space-3,
+    3-half: $space-3-half,
+    4: $space-4,
+    5: $space-5,
+    6: $space-6,
+    6px: $space-6px,
+    7: $space-7,
+    8: $space-8,
+    9: $space-9,
+    10: $space-10,
+    10px: $space-10px,
+    30: $space-30,
+    50: $space-50,
+    60: $space-60,
+    80: $space-80,
+    100: $space-100
+);
+
+@each $key, $space in $spaces {
+    .gap-#{$key} {
+        gap: $space;
+    }
+}
 
 $transition: 0.5s ease-in-out;

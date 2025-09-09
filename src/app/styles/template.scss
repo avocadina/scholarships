@@ -1,3 +1,16 @@
 .padding-10-16 {
     padding: $space-10px $space-4;
 }
+
+//
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.fixed {
+    position: fixed;
+}

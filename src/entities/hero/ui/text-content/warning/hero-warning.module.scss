@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    justify-content: center;
+    padding: $space-3-half $space-4;
+    border-radius: $space-3;
+    box-shadow: $shadow-200;
+    align-self: flex-start;
+    font-family: sans-serif;
+}
+
+.icon {
+    max-width: 20px;
+    max-height: 20px;
+}

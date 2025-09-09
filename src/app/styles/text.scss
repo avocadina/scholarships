@@ -1,13 +1,14 @@
 @use "app/styles/colors.scss" as *;
-$font-family: "Roboto", sans-serif;
-$second-family: "Raleway", sans-serif;
-
 .second-family {
-    font-family: $second-family;
+    font-family: var(--font-roboto), sans-serif;
 }
 
 .uppercase {
     text-transform: uppercase;
+}
+
+.variant-numeric {
+    font-variant-numeric: lining-nums proportional-nums;
 }
 //
 
@@ -17,6 +18,15 @@ $second-family: "Raleway", sans-serif;
 
 .semibold {
     font-weight: 600;
+}
+
+.bold {
+    font-weight: 700;
+    font-variation-settings: "wght" 700;
+}
+
+.x-bold {
+    font-weight: 800;
 }
 //
 
@@ -41,4 +51,9 @@ $second-family: "Raleway", sans-serif;
 .text-18 {
     font-size: 18px;
     line-height: 144%;
+}
+
+.text-48 {
+    font-size: 48px;
+    line-height: 117%;
 }

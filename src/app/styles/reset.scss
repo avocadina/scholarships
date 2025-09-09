@@ -1,6 +1,5 @@
 @use "app/styles/colors.scss" as *;
 @use "app/styles/sizes.scss" as *;
-@use "app/styles/text.scss" as *;
 *,
 *::before,
 *::after {
@@ -10,7 +9,7 @@
 }
 
 * {
-  font-family: $font-family;
+  font-family: var(--font-raleway);
   -webkit-tap-highlight-color: transparent;
   -webkit-appearance: none;
   appearance: none;

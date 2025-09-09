@@ -11,13 +11,13 @@
 .page-wrapper {
     display: flex;
     flex-direction: column;
-    gap: $space-60;
+    gap: $space-8;
 }
 
 .page-wrapper__main {
     display: flex;
     flex-direction: column;
-    gap: $space-2;
+    gap: $space-60;
 }
 
 .scrollbar {

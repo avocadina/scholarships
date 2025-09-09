@@ -1,0 +1,10 @@
+.container {
+    width: 460px;
+    height: 245px;
+    overflow: hidden;
+
+    position: absolute;
+    top: 50%;
+    left: calc(100% + $space-5);
+    transform: translate(0, -50%);
+}
