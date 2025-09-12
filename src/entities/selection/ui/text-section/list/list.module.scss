@@ -1,0 +1,21 @@
+.container {
+    padding: $space-6 $space-6 $space-8;
+    min-height: 216px;
+}
+
+.item {
+    position: relative;
+    padding-left: $space-6;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: $space-2;
+        top: $space-3;
+        transform: translateY(-50%);
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: $neutral-600;
+    }
+}

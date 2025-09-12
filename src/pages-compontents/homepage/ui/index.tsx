@@ -1,4 +1,5 @@
 import React from "react";
+import AboutContent from "~/src/entities/about/ui";
 import Hero from "~/src/entities/hero/ui";
 import SectionContainer from "~/src/entities/section-container";
 import Selection from "~/src/entities/selection/ui";
@@ -9,6 +10,10 @@ export default function HomePage() {
     {
       heading: "Конкурсный отбор 2025",
       component: <Selection />,
+    },
+    {
+      heading: "О стипендии",
+      component: <AboutContent />,
     },
   ];
   return (

@@ -6,8 +6,10 @@ import HeroTextContent from "./text-content";
 
 export default function Hero() {
   return (
-    <Container className={`wrapper ${classes.container}`}>
-      <HeroTextContent />
-    </Container>
+    <div className="wrapper">
+      <Container className={`${classes.container}`}>
+        <HeroTextContent />
+      </Container>
+    </div>
   );
 }

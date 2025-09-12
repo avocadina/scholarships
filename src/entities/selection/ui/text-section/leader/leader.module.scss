@@ -1,0 +1,25 @@
+.container {
+    align-items: center;
+    justify-content: center;
+    gap: $space-8;
+    height: 100%;
+    max-height: 212px;
+    padding: $space-6;
+}
+
+.icon {
+    width: 120px;
+    height: 116px;
+}
+
+.link {
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+    }
+
+    &:hover {
+        color: $blue-500;
+    }
+}

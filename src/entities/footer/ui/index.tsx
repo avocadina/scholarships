@@ -15,14 +15,16 @@ export default function Footer({ paddingBottom = 43 }: Props) {
         paddingBottom: `${paddingBottom}px`,
       }}
     >
-      <Container
-        className={`wrapper ${classes.container} flex-row space-between align-center`}
-      >
-        <p className={`text-16 neutral-600 ${classes.text}`}>
-          © 2022-2025 ФГБНУ НИИ РИНКЦЭ
-        </p>
-        <Navigation forFooter classNameNav={classes.nav} />
-      </Container>
+      <div className="wrapper">
+        <Container
+          className={`${classes.container} flex-row space-between align-center`}
+        >
+          <p className={`text-16 neutral-600 ${classes.text}`}>
+            © 2022-2025 ФГБНУ НИИ РИНКЦЭ
+          </p>
+          <Navigation forFooter classNameNav={classes.nav} />
+        </Container>
+      </div>
     </footer>
   );
 }

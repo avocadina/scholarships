@@ -2,7 +2,11 @@ import { FC, SVGProps } from "react";
 import Calendar from "~/public/homepage/selection/calendar.svg";
 import People from "~/public/homepage/selection/people.svg";
 import Award from "~/public/homepage/selection/award.svg";
-import { ISelectionDigits, ISelectionTBodyItem } from "./selection.interface";
+import {
+  ISelectionDigits,
+  ISelectionTBodyItem,
+  ISelectionTextList,
+} from "./selection.interface";
 
 export const selectionDigitalInfo: ISelectionDigits[] = [
   {
@@ -44,5 +48,22 @@ export const selectionTBody: ISelectionTBodyItem[] = [
     date: "2026 год",
     people: "Скоро",
     awards: "Скоро",
+  },
+];
+
+export const selectionText: ISelectionTextList[] = [
+  {
+    title: "Приоритеты СНТР (больше всего победителей):",
+    list: [
+      "Передовые технологии проектирования и создания высокотехнологичной продукции",
+      "Персонализированная, предиктивная и профилактическая медицина, здравоохранение и технологии здоровьесбережения",
+    ],
+  },
+  {
+    title: "Наукоёмкие технологии (лидеры по заявкам):",
+    list: [
+      "Новые материалы с заданными свойствами и характеристиками",
+      "Лекарственные средства и платформы нового поколения (биотех., высокотех., радиофарм.)",
+    ],
   },
 ];

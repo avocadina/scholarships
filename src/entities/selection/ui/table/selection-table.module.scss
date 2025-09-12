@@ -2,6 +2,6 @@
     grid-area: tablet;
     max-width: 660px;
     min-height: 296px;
-    padding: $space-6;
+    padding: calc($space-6 - $space-0) $space-6;
     gap: $space-5
 }

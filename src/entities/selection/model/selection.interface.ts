@@ -8,3 +8,8 @@ export interface ISelectionTBodyItem {
   people: string;
   awards: string;
 }
+
+export interface ISelectionTextList {
+  title: string;
+  list: string[];
+}

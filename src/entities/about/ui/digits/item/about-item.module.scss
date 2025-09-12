@@ -1,0 +1,22 @@
+.container {
+    padding: $space-8;
+    border-radius: $space-4;
+    box-shadow: $shadow-100;
+    grid-column: span 6;
+}
+
+.vector {
+    max-width: 329px;
+    width: 100%;
+    overflow: hidden;
+    animation: draw 2s ease-in-out infinite alternate;
+}
+
+@keyframes draw {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}

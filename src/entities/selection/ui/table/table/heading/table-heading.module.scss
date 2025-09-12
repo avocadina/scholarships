@@ -9,6 +9,7 @@
     display: flex;
     justify-content: center;
     padding: $space-3-half 0;
+
     &:not(:last-of-type) {
         border-right: 1px solid $blue-200;
     }

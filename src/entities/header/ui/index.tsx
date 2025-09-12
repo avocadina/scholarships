@@ -12,10 +12,12 @@ interface Props {
 export default function Header({ needBottom = true }: Props) {
   return (
     <header className={classes.section}>
-      <Container className={`flex-column wrapper ${classes.wrapper}`}>
-        <HeaderTop />
-        {needBottom && <Navigation />}
-      </Container>
+      <div className="wrapper">
+        <Container className={`flex-column ${classes.wrapper}`}>
+          <HeaderTop />
+          {needBottom && <Navigation />}
+        </Container>
+      </div>
     </header>
   );
 }

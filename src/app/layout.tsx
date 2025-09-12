@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import classNames from "classnames";
+
+import ClientLayout from "../entities/client-layout/ui";
 
 import "./styles/reset.scss";
 import "./styles/global.scss";
 import "./styles/template.scss";
 import "./styles/text.scss";
-import ClientLayout from "../entities/client-layout/ui";
-import classNames from "classnames";
 
 const raleway = localFont({
   src: [

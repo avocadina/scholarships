@@ -4,10 +4,12 @@
     grid-template-columns: repeat(12, 1fr);
     min-height: 388px;
     max-width: 660px;
+    width: 100%;
 }
 
 .item {
     grid-column: 6 span;
     display: grid;
     place-content: center;
+    padding: $space-10;
 }

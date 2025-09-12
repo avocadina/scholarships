@@ -13,7 +13,7 @@ export default function SelectionDigitalInfo() {
         return (
           <SelectionContainer
             key={index}
-            className={`${classes.item} align-center `}
+            className={`${classes.item} align-center`}
           >
             <h3
               className={`text-48 bold ${commontTextClass} ${isLast ? "teal-500" : "blue-500"}`}
