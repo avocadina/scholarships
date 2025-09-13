@@ -1,0 +1,39 @@
+.blue {
+    span {
+        color: $blue-100;
+    }
+    
+    .digit:hover {
+        transform: translateX(10px);
+        border: 1px solid $blue-200;
+    }
+}
+
+.digit {
+    display: grid;
+    place-content: center;
+
+    height: 56px;
+    width: 56px;
+    border-radius: $space-5;
+    border: 1px solid $blue-200;
+    background-color: transparent;
+    
+    cursor: default;
+    
+    transition: border $transition, transform $transition;
+    &:hover {
+        border: 1px solid $blue-400;
+    }
+}
+
+.image {
+    max-width: 81px;
+    max-height: 100%;
+    overflow: hidden;
+    transition: transform $transition;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}

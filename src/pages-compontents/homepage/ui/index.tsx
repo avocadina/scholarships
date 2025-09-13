@@ -1,5 +1,6 @@
 import React from "react";
 import AboutContent from "~/src/entities/about/ui";
+import Application from "~/src/entities/application/ui";
 import Hero from "~/src/entities/hero/ui";
 import SectionContainer from "~/src/entities/section-container";
 import Selection from "~/src/entities/selection/ui";
@@ -14,6 +15,10 @@ export default function HomePage() {
     {
       heading: "О стипендии",
       component: <AboutContent />,
+    },
+    {
+      heading: "Как подать заявку",
+      component: <Application />,
     },
   ];
   return (
