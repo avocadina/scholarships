@@ -5,13 +5,22 @@ import AboutItem from "./item";
 import AboutSubInfo from "./sub-info";
 import { aboutItems } from "~/src/entities/about/model/about.const";
 
-export default function AboutDigits() {
+interface Props {
+  inView: boolean;
+}
+
+export default function AboutDigits({ inView }: Props) {
   return (
     <div className={classes.container}>
       {aboutItems.map((item, index) => (
-        <AboutItem {...item} key={index + item.title} />
+        <AboutItem
+          index={index + 1}
+          inView={inView}
+          {...item}
+          key={index + item.title}
+        />
       ))}
-      <AboutSubInfo />
+      <AboutSubInfo inView={inView} />
     </div>
   );
 }

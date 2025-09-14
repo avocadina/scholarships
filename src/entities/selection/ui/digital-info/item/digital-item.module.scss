@@ -1,0 +1,10 @@
+.item {
+    grid-column: 6 span;
+    display: grid;
+    place-content: center;
+    padding: $space-10;
+}
+
+.counter {
+    justify-content: center;
+}

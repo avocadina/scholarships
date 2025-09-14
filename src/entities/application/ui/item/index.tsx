@@ -7,7 +7,9 @@ import ApplicationItemHeading from "./heading";
 import ApplicationItemText from "./text";
 import { IApplicationItem } from "~/src/entities/application/model/application.interface";
 
-interface Props extends IApplicationItem {}
+interface Props extends IApplicationItem {
+  inView: boolean;
+}
 
 export default function ApplicationItem({
   title,
@@ -15,6 +17,7 @@ export default function ApplicationItem({
   blue,
   text,
   index,
+  inView,
 }: Props) {
   return (
     <li
@@ -32,6 +35,7 @@ export default function ApplicationItem({
         direction="up"
         amount={0.2}
         index={index}
+        inView={inView}
       >
         <ApplicationItemHeading index={index} blue={blue} />
         <ApplicationItemText title={title} text={text} blue={blue} />

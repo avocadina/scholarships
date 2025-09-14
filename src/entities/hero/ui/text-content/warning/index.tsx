@@ -2,12 +2,12 @@ import React from "react";
 
 import classes from "./hero-warning.module.scss";
 import WarningIcon from "~/public/homepage/hero/warning-icon.svg";
-import Container from "~/src/shared/ui/container";
+import Container from "~/src/shared/ui/container/ui";
 
 export default function HeroWarning() {
   return (
     <Container
-      color="red-100"
+      bgColor="red-100"
       className={`flex-row align-center gap-6px ${classes.container}`}
     >
       <WarningIcon className={classes.icon} />

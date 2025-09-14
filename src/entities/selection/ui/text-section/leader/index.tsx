@@ -5,11 +5,17 @@ import Mgu from "~/public/homepage/selection/mgu.svg";
 import SelectionContainer from "~/src/entities/selection/ui/container";
 import Link from "next/link";
 
-export default function SelectionLeader() {
+interface Props {
+  inView: boolean;
+}
+
+export default function SelectionLeader({ inView }: Props) {
   return (
     <SelectionContainer
       flexDirection="row"
       className={`${classes.container} relative`}
+      index={4}
+      inView={inView}
     >
       <div className={classes.icon}>
         <Mgu />

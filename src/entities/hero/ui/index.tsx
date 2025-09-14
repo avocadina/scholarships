@@ -1,15 +1,21 @@
 import React from "react";
 
 import classes from "./hero.module.scss";
-import Container from "~/src/shared/ui/container";
 import HeroTextContent from "./text-content";
+import { AnimatedItem } from "~/src/shared/ui/on-view-item/ui";
 
 export default function Hero() {
   return (
-    <div className="wrapper">
-      <Container className={`${classes.container}`}>
-        <HeroTextContent />
-      </Container>
-    </div>
+    <section className={classes.section}>
+      <div className="wrapper">
+        <AnimatedItem
+          slideIn
+          direction="down"
+          className={`${classes.container}`}
+        >
+          <HeroTextContent />
+        </AnimatedItem>
+      </div>
+    </section>
   );
 }

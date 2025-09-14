@@ -1,7 +1,7 @@
 import React from "react";
 
 import classes from "./application-heading.module.scss";
-import Container from "~/src/shared/ui/container";
+import Container from "~/src/shared/ui/container/ui";
 import Image from "next/image";
 import classNames from "classnames";
 

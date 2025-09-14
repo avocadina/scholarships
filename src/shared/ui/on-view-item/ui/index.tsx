@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef, ReactNode } from "react";
 import { useInView } from "framer-motion";
-import Container from "../../container";
+import Container from "../../container/ui";
 
 interface AnimatedItemProps {
   children: ReactNode;
@@ -16,7 +16,8 @@ interface AnimatedItemProps {
   onClick?: () => void;
   className?: string;
   style?: React.CSSProperties;
-  color?: string;
+  color?: string | null;
+  inView?: boolean;
 }
 
 export const AnimatedItem: React.FC<AnimatedItemProps> = ({
@@ -25,7 +26,7 @@ export const AnimatedItem: React.FC<AnimatedItemProps> = ({
   duration = 0.5,
   delay = 0,
   index = 0,
-  stagger = 0.15,
+  stagger = 0.2,
   direction = "up",
   slideIn = false,
   onMouseEnter,
@@ -33,9 +34,10 @@ export const AnimatedItem: React.FC<AnimatedItemProps> = ({
   className,
   style,
   color,
+  inView,
 }) => {
   const ref = useRef<HTMLDivElement>(null);
-  const inView = useInView(ref, { amount, once: false });
+  const inViewLocal = useInView(ref, { amount, once: false });
 
   const offset = 50;
 
@@ -61,12 +63,12 @@ export const AnimatedItem: React.FC<AnimatedItemProps> = ({
         transitionDuration: `${duration}s`,
         transitionDelay: `${delay + index * stagger}s`,
         transitionTimingFunction: "ease-out",
-        transform: inView ? visibleTransform : hiddenTransform,
-        opacity: inView ? 1 : 0,
+        transform: (inView ?? inViewLocal) ? visibleTransform : hiddenTransform,
+        opacity: (inView ?? inViewLocal) ? 1 : 0,
         ...style,
       }}
       className={className}
-      color={color}
+      bgColor={color}
     >
       {children}
     </Container>

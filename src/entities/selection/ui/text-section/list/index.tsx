@@ -4,11 +4,18 @@ import classes from "./list.module.scss";
 import SelectionContainer from "~/src/entities/selection/ui/container";
 import { ISelectionTextList } from "~/src/entities/selection/model/selection.interface";
 
-interface Props extends ISelectionTextList {}
+interface Props extends ISelectionTextList {
+  index: number;
+  inView: boolean;
+}
 
-export default function TextList({ title, list }: Props) {
+export default function TextList({ title, index, list, inView }: Props) {
   return (
-    <SelectionContainer className={`gap-5 ${classes.container}`}>
+    <SelectionContainer
+      index={index + 2}
+      className={`gap-5 ${classes.container}`}
+      inView={inView}
+    >
       <h6 className="neutral-900 second-family text-16 semibold">{title}</h6>
       <ul className={`flex-column gap-5`}>
         {list.map((item, index) => (

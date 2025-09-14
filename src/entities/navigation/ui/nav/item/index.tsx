@@ -4,21 +4,24 @@ import React from "react";
 import classes from "./nav-item.module.scss";
 import Link from "next/link";
 import classNames from "classnames";
-import { INavLink } from "~/src/entities/navigation/model/navigation.interface";
+import {
+  INavLink,
+  NavLinkHrefT,
+} from "~/src/entities/navigation/model/navigation.interface";
 
 interface Props extends INavLink {
-  setActivePage: React.Dispatch<React.SetStateAction<number>>;
-  isActive: boolean;
-  index: number;
+  setActivePage: React.Dispatch<React.SetStateAction<NavLinkHrefT>>;
+  activePage: NavLinkHrefT;
 }
 
 export default function NavItem({
   title,
   href,
   setActivePage,
-  isActive,
-  index,
+  activePage,
 }: Props) {
+  const isActive = activePage === href;
+
   return (
     <Link
       href={href}
@@ -26,7 +29,7 @@ export default function NavItem({
       className={classNames(`text-18 semibold blue-300 ${classes.link}`, {
         [classes.active]: isActive,
       })}
-      onClick={() => setActivePage(index)}
+      onClick={() => setActivePage(href)}
     >
       {title}
     </Link>

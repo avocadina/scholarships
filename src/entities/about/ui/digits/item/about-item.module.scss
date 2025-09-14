@@ -7,16 +7,12 @@
 
 .vector {
     max-width: 329px;
-    width: 100%;
+    width: 0%;
     overflow: hidden;
-    animation: draw 2s ease-in-out infinite alternate;
-}
+    transition: width 1s ease;
+    transition-delay: 0.5s;
 
-@keyframes draw {
-    from {
-        width: 0%;
-    }
-    to {
+    &.active {
         width: 100%;
     }
 }
