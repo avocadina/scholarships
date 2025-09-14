@@ -17,7 +17,7 @@ export default function ApplicationItemHeading({ index, blue }: Props) {
         [classes.blue]: blue,
       })}
     >
-      <Container className={classes.digit}>
+      <Container bgColor={null} className={classes.digit}>
         <span className="blue-400 text-center semibold second-family text-28">
           {index}
         </span>
