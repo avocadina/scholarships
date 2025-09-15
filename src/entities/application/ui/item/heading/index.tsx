@@ -1,9 +1,9 @@
 import React from "react";
+import classNames from "classnames";
 
 import classes from "./application-heading.module.scss";
 import Container from "~/src/shared/ui/container/ui";
 import Image from "next/image";
-import classNames from "classnames";
 
 interface Props {
   index: number;

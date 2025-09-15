@@ -2,7 +2,7 @@ import React from "react";
 
 import classes from "./digital-info.module.scss";
 import SelectionDigitalItem from "./item";
-import { selectionDigitalInfo } from "~/src/entities/selection/model/selection.const";
+import { selectionDigitalInfo } from "../../model/selection.const";
 
 interface Props {
   inView: boolean;

@@ -9,7 +9,7 @@ interface Props {
 
 export default function AboutItemHeading({ title, subTitle }: Props) {
   return (
-    <div className="flex-row gap-4 flex-end">
+    <div className={`gap-4 flex-end ${classes.container}`}>
       <h3 className={`blue-500 text-48 second-family bold ${classes.title}`}>
         {title}
       </h3>

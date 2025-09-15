@@ -11,7 +11,7 @@ export default function HomePage() {
     {
       heading: "Конкурсный отбор 2025",
       component: <Selection />,
-      scrolYAmount: 0.3,
+      scrollYAmount: 0.5,
     },
     {
       heading: "О стипендии",
@@ -30,7 +30,7 @@ export default function HomePage() {
           key={index}
           heading={section.heading}
           headingClassName="text-28 blue-300 second-family semibold"
-          scrollYAmount={section.scrolYAmount}
+          scrollYAmount={section.scrollYAmount}
         >
           {section.component}
         </SectionContainer>

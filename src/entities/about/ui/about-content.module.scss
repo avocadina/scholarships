@@ -4,9 +4,14 @@
 
 .imageContainer {
     max-width: 334px;
-    max-height: 334px;
     width: 100%;
     border-radius: $space-4;
     box-shadow: $shadow-100;
     overflow: hidden;
+}
+
+@media screen and (width <= 1024px) {
+    .imageContainer {
+        display: none;
+    }
 }

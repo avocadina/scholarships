@@ -16,7 +16,7 @@ export default function AboutSubInfo({ inView }: Props) {
       inView={inView}
       className={`${classes.container} flex-row align-center gap-3`}
     >
-      <Info />
+      <Info className={classes.icon} />
       <p className="teal-600 variant-numeric second-family text-18 regular">
         Поддерживаются очные аспиранты и адъюнкты с&nbsp;руководителем и
         утверждённой темой.

@@ -1,5 +1,5 @@
 export interface IHomepageSection {
   heading: string;
   component: React.ReactNode;
-  scrolYAmount?: number;
+  scrollYAmount?: number;
 }

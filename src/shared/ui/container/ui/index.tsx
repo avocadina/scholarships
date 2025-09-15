@@ -2,8 +2,6 @@
 import React from "react";
 import classNames from "classnames";
 
-import classes from "./container.module.scss";
-
 export interface ContainerProps extends React.HTMLAttributes<HTMLDivElement> {
   bgColor?: string | null;
   ref?: React.Ref<HTMLDivElement>;
@@ -17,7 +15,7 @@ export default function Container({
 }: ContainerProps) {
   return (
     <div
-      className={classNames(classes.cardSpotlight, className, {
+      className={classNames(className, {
         [`container-${bgColor}`]: bgColor,
       })}
       {...rest}

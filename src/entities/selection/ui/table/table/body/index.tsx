@@ -1,8 +1,8 @@
 import React from "react";
+import classNames from "classnames";
 
 import classes from "./table-body.module.scss";
 import { selectionTBody } from "~/src/entities/selection/model/selection.const";
-import classNames from "classnames";
 
 export default function TableBody() {
   return (

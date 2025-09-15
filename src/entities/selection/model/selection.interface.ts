@@ -3,6 +3,12 @@ export interface ISelectionDigits {
   digit: string;
 }
 
+export interface IDigitsResponse {
+  total: number;
+  fromSite: number;
+  accessed: number;
+}
+
 export interface ISelectionTBodyItem {
   date: string;
   people: string;
