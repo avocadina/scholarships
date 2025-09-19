@@ -6,7 +6,7 @@ import classes from "./about-content.module.scss";
 import ImageSrc from "~/public/homepage/about/image.png";
 import Image from "next/image";
 import AboutDigits from "./digits";
-import { AnimatedItem } from "~/src/shared/ui/on-view-item/ui";
+import AnimatedItem from "~/src/shared/ui/on-view-item/ui";
 
 export default function AboutContent() {
   const blockRef = useRef<HTMLDivElement>(null);

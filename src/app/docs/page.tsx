@@ -1,5 +1,5 @@
-import HomePage from "~/src/pages-compontents/homepage/ui";
+import DocsPage from "~/src/pages-compontents/docs/ui";
 
 export default function Page() {
-  return <HomePage />;
+  return <DocsPage />;
 }

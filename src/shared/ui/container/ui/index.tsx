@@ -1,26 +1,30 @@
 "use client";
-import React from "react";
+import React, { ElementType } from "react";
 import classNames from "classnames";
 
-export interface ContainerProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface ContainerProps<T extends ElementType>
+  extends React.HTMLAttributes<HTMLDivElement> {
   bgColor?: string | null;
   ref?: React.Ref<HTMLDivElement>;
+  tag?: T;
 }
 
-export default function Container({
+export default function Container<T extends ElementType>({
   bgColor = "neutral-100",
   className,
   children,
   ...rest
-}: ContainerProps) {
+}: ContainerProps<T>) {
+  const Tag = rest.tag || "div";
+
   return (
-    <div
+    <Tag
       className={classNames(className, {
         [`container-${bgColor}`]: bgColor,
       })}
       {...rest}
     >
       {children}
-    </div>
+    </Tag>
   );
 }

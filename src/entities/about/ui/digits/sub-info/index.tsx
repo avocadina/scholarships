@@ -2,7 +2,7 @@ import React from "react";
 
 import classes from "./about-sub-info.module.scss";
 import Info from "~/public/homepage/about/info.svg";
-import { AnimatedItem } from "~/src/shared/ui/on-view-item/ui";
+import AnimatedItem from "~/src/shared/ui/on-view-item/ui";
 
 interface Props {
   inView: boolean;

@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 
 import classes from "./footer.module.scss";
 import Navigation from "~/src/entities/navigation/ui";
-import { AnimatedItem } from "~/src/shared/ui/on-view-item/ui";
+import AnimatedItem from "~/src/shared/ui/on-view-item/ui";
 import { useInView } from "framer-motion";
 
 interface Props {

@@ -1,9 +1,9 @@
 "use client";
-import React, { useRef, ReactNode } from "react";
+import React, { useRef, ReactNode, ElementType } from "react";
 import { useInView } from "framer-motion";
 import Container from "../../container/ui";
 
-interface AnimatedItemProps {
+interface AnimatedItemProps<T extends ElementType> {
   children: ReactNode;
   amount?: number;
   duration?: number;
@@ -18,9 +18,11 @@ interface AnimatedItemProps {
   style?: React.CSSProperties;
   color?: string | null;
   inView?: boolean;
+  role?: string;
+  tag?: T;
 }
 
-export const AnimatedItem: React.FC<AnimatedItemProps> = ({
+export default function AnimatedItem<T extends ElementType>({
   children,
   amount = 0.5,
   duration = 0.5,
@@ -35,7 +37,9 @@ export const AnimatedItem: React.FC<AnimatedItemProps> = ({
   style,
   color,
   inView,
-}) => {
+  role,
+  tag,
+}: AnimatedItemProps<T>) {
   const ref = useRef<HTMLDivElement>(null);
   const inViewLocal = useInView(ref, { amount, once: false });
 
@@ -51,6 +55,7 @@ export const AnimatedItem: React.FC<AnimatedItemProps> = ({
   const hiddenTransform = slideIn ? initialPositions[direction] : "scale(0.7)";
 
   const visibleTransform = "translate(0,0) scale(1)";
+  const Tag = tag;
 
   return (
     <Container
@@ -69,8 +74,10 @@ export const AnimatedItem: React.FC<AnimatedItemProps> = ({
       }}
       className={className}
       bgColor={color}
+      role={role}
+      tag={tag}
     >
       {children}
     </Container>
   );
-};
+}

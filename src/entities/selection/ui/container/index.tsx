@@ -2,7 +2,7 @@ import React from "react";
 import classNames from "classnames";
 
 import classes from "./selection-container.module.scss";
-import { AnimatedItem } from "~/src/shared/ui/on-view-item/ui";
+import AnimatedItem from "~/src/shared/ui/on-view-item/ui";
 
 interface Props {
   children: React.ReactNode;

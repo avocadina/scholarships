@@ -7,7 +7,7 @@ import Vector from "~/public/homepage/about/vector.svg";
 import Container from "~/src/shared/ui/container/ui";
 import AboutItemHeading from "./heading";
 import { IAboutItem } from "~/src/entities/about/model/about.interface";
-import { AnimatedItem } from "~/src/shared/ui/on-view-item/ui";
+import AnimatedItem from "~/src/shared/ui/on-view-item/ui";
 
 interface Props extends IAboutItem {
   inView: boolean;

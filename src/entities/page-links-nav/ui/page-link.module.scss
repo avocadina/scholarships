@@ -1,0 +1,11 @@
+.link {
+    @media screen and (any-hover: hover) {
+        &:hover {
+            color: $blue-500;
+        }
+    }
+}
+
+.container {
+    padding: 0 $space-4;
+}

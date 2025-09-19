@@ -3,7 +3,7 @@ import React from "react";
 import classes from "./button.module.scss";
 import classNames from "classnames";
 
-export type ButtonTypeButtonT = "ghost" | "blue";
+export type ButtonTypeButtonT = "ghost" | "blue" | "white";
 
 interface Props extends React.HTMLAttributes<HTMLButtonElement> {
   typeButton: ButtonTypeButtonT;

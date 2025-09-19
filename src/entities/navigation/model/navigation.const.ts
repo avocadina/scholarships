@@ -7,14 +7,14 @@ export const navigationLinks: INavLink[] = [
   },
   {
     title: "Документы",
-    href: "/docs",
+    href: "docs",
   },
   {
     title: "Актуальное",
-    href: "/actual",
+    href: "actual",
   },
   {
     title: "Контакты",
-    href: "/contacts",
+    href: "contacts",
   },
 ];

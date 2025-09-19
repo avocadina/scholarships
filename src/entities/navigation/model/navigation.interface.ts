@@ -3,4 +3,4 @@ export interface INavLink {
   href: NavLinkHrefT;
 }
 
-export type NavLinkHrefT = "/" | "/docs" | "/actual" | "/contacts";
+export type NavLinkHrefT = "/" | "docs" | "actual" | "contacts";

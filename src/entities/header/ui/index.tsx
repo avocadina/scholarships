@@ -3,7 +3,7 @@ import React from "react";
 import classes from "./header.module.scss";
 import HeaderTop from "./top";
 import Navigation from "~/src/entities/navigation/ui";
-import { AnimatedItem } from "~/src/shared/ui/on-view-item/ui";
+import AnimatedItem from "~/src/shared/ui/on-view-item/ui";
 
 interface Props {
   needBottom?: boolean;

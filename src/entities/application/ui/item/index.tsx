@@ -2,7 +2,7 @@ import React from "react";
 import classNames from "classnames";
 
 import classes from "./application-item.module.scss";
-import { AnimatedItem } from "~/src/shared/ui/on-view-item/ui";
+import AnimatedItem from "~/src/shared/ui/on-view-item/ui";
 import ApplicationItemHeading from "./heading";
 import ApplicationItemText from "./text";
 import { IApplicationItem } from "~/src/entities/application/model/application.interface";

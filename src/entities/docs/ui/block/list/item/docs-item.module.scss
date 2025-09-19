@@ -1,0 +1,13 @@
+.container {
+    padding: $space-5;
+    border-radius: $space-3;
+    background-color: $blue-100;
+
+    .text {
+        max-width: 848px;
+    }
+
+    p {
+        opacity: 0.6;
+    }
+}
