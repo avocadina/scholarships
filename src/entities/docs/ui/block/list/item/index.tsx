@@ -20,6 +20,7 @@ export default function DocsItem({ title, descr, itemIndex }: Props) {
         classes.container,
         `flex-row space-between align-center`,
       )}
+      color={"blue-100"}
     >
       <div className={`flex-column gap-6px ${classes.text}`}>
         <h4 className="blue-800 second-family semibold text-16">{title}</h4>
